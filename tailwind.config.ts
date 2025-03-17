@@ -1,7 +1,22 @@
 import type { Config } from "tailwindcss";
 
+import boilerplateConfig from "boilerplate-design-system/tailwind-config";
+//
+// export default {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,ts,jsx,tsx}",
+//     "./node_modules/boilerplate-design-system/dist/*.js",
+//   ],
+//   presets: [boilerplateConfig],
+// };
+
 export default {
-  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./index.html",
+    "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}",
+  ],
+  presets: [boilerplateConfig],
   theme: {
     extend: {
       fontFamily: {
